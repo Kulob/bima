@@ -1,0 +1,121 @@
+
+.header {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e6ed;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  transition: all 0.3s ease;
+
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+    height: 60px;
+    position: relative;
+  }
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+
+
+.nav {
+  display: flex;
+  gap: 32px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.2s ease;
+  position: relative;
+
+  &:hover {
+    color: #fbbe07;
+  }
+
+  &.active {
+    color: #fbbe07;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #fbbe07;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+ 
+    @media (max-width: 768px) {
+      display: none;
+    }
+  
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+
+  &:hover {
+    color: #fbbe07;
+    transform: translateY(-1px);
+  }
+}
+
+.actionOrange {
+  color: #fbbe07;
+  font-weight: 600;
+}
+
+.flag {
+  margin-left: 8px;
+}
+
+.flagRu {
+  font-size: 20px;
+}
