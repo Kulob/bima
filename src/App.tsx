@@ -20,17 +20,17 @@ function App() {
           <AnimatePresence mode="wait">
             <Routes>
               
-              <Route path="/claim" element={
+              <Route path="/bima/claim" element={
                 
                   <ClaimForm />
                 
               } /> 
-              <Route path="/" element={
+              <Route path="/bima/" element={
                 
                   <ClientsPage />
                 
               } />
-              <Route path="/currency" element={
+              <Route path="/bima/currency" element={
                 
                   <CurrencyPage />
                 

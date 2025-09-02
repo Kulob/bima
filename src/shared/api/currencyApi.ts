@@ -8,7 +8,7 @@ interface CurrencyRate {
 }
 
 
-export const fetchCurrencyRates = async (date?: string): Promise<{
+export const fetchCurrencyRates = async (_date?: string): Promise<{
   rates: CurrencyRate[];
   lastUpdated: string;
 }> => {
